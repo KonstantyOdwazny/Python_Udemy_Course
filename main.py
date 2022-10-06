@@ -169,9 +169,22 @@
 # Tuple - jest immutable (nie mozna go modyfikowac) 
 # to taka lista ktorej nie mozna modyfikowac
 
-my_tuple = (1,2,3,4,5,6)
-# my_tuple[2] = 9 nie moge tak zrobic
-my_list = [1,2,3,4,5,6]
-my_list[2] = 9 # z lista moge tak zrobic
-print(my_tuple[2])
-print(my_list[2])
+# my_tuple = (1,2,3,4,5,6)
+# # my_tuple[2] = 9 nie moge tak zrobic
+# my_list = [1,2,3,4,5,6]
+# my_list[2] = 9 # z lista moge tak zrobic
+# print(my_tuple[2])
+# print(my_list[2])
+
+# Set
+# To kolelka nieuporzadkowanych unikalnych wartosci
+my_set = {1,2,2,2,3,3,4,5,6,9,0}
+my_set.add(100)
+my_set.add(9)
+print(my_set)
+my_list = [1,2,3,3,3,3,4,6,7]
+# konwersja lista na set
+new_set = set(my_list)
+print(my_list)
+print(new_set)
+
