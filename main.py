@@ -116,15 +116,62 @@
 
 
 # List slicing 
-amazon_chart = ['noteboks',
-               'Sunglass',
-               10,
-               'graps',
-               23]
-amazon_chart[0] = 'laptop'
-# new_cart = amazon_chart # jezeli tak zrobie to jak zmienie new_cart zmieni sie
-#tez amazon cart poniewaz to ta sama zmienna teraz
-new_cart = amazon_chart[:] # teraz jest to kopia ale nie zmienia juz oryginalu
-new_cart[0] = 'gum'
-print(amazon_chart[0::2])
-print(new_cart)
+# amazon_chart = ['noteboks',
+#                'Sunglass',
+#                10,
+#                'graps',
+#                23]
+# amazon_chart[0] = 'laptop'
+# # new_cart = amazon_chart # jezeli tak zrobie to jak zmienie new_cart zmieni sie
+# #tez amazon cart poniewaz to ta sama zmienna teraz
+# new_cart = amazon_chart[:] # teraz jest to kopia ale nie zmienia juz oryginalu
+# new_cart[0] = 'gum'
+# print(amazon_chart[0::2])
+# print(new_cart)
+
+# List method 
+# basket = ['a','b','d','c','a','x','f','e']
+
+# # basket.sort() # zmienia nam nasza liste na posortowana
+# # print(basket)
+
+# print(sorted(basket)) # tylko wyswietla posortowana liste nie zminiajac jej
+# print(basket)
+# basket.reverse() # odwraca cala liste
+# print(basket) 
+
+# Common list patterns
+# sentence = ' '
+# new = sentence.join(['hi','my','name','is', 'Kostek']) # rozlozenie listy na string
+
+# # lub
+# new_s = ' '.join(['hi','my','name','is', 'Kostek'])
+
+# print(new_s)
+
+# Dictionary
+# dictionary = {   # slownik to nieuporzadkowany zboir kluczy i wartosci
+#   'a':1,
+#   'b':2
+# }
+
+# print(dictionary['b'])
+
+# # Jezeli chcemy sprawdzic czy jakis klucz istnieje w naszym slowniku to 
+# # to uzywamy .get() zeby nie bylo bledu
+# print(dictionary.get('s'))
+
+# # Mozemy tez w get ustawic wartosc defult dla klucza, w przypadku gdyby nie istnial
+# print(dictionary.get('s',22))
+# # Ale gdy istnieje to wartosc default nic nie zmienia
+# print(dictionary.get('a', 122))
+
+# Tuple - jest immutable (nie mozna go modyfikowac) 
+# to taka lista ktorej nie mozna modyfikowac
+
+my_tuple = (1,2,3,4,5,6)
+# my_tuple[2] = 9 nie moge tak zrobic
+my_list = [1,2,3,4,5,6]
+my_list[2] = 9 # z lista moge tak zrobic
+print(my_tuple[2])
+print(my_list[2])
