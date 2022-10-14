@@ -119,6 +119,7 @@ if __name__ == "__main__":
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) # zeby uzyc matplotlib
     image = image_detection(image)
     
+    
     # cap = cv2.VideoCapture('videos/road_movie.mp4')
     # video_detection(cap)
     
