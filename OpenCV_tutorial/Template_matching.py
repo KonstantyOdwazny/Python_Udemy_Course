@@ -16,7 +16,7 @@ for pt in zip(*loc[::-1]):
     print(pt)
     cv2.rectangle(img, pt, (pt[0]+w, pt[1]+h), (255,0,0), 3)
     
-    
+
 
 cv2.imshow("img", img)
 cv2.waitKey(0)
