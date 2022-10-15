@@ -5,7 +5,7 @@ app = Flask(__name__) # Tworzenie strony na serwerze developera
 # strona bazowa Home
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("idn.html")
 
 # Akcja po wpisaniu /<cos> 
 @app.route("/<name>")
